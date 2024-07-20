@@ -15,7 +15,7 @@ def main():
     if config['BROWSER']['WEBDRIVER'] == "Firefox":
         browser = webdriver.Firefox()
     elif config['BROWSER']['WEBDRIVER'] == "Chrome":
-        browser = webdriver.Chrome("./chromedriver")
+        browser = webdriver.Chrome()
     else:
         print("Set in config.in file as WEBDRIVER either Firefox or Chrome. Restarting...")
         time.sleep(5)
